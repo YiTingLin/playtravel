@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>玩旅 Play Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--新字型-->
+    <!-- font-family: 'Noto Sans TC', sans-serif;  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <div class="header">
+        <h1><a href=""><img src="1/LOGO.png" style="height: 70px"></a></h1>
+        <h2><a href=""><img src="1/weather.png" style="height: 40px"></a></h2>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#about">關於玩旅</a></li>
+                <li>|</li>
+                <li><a href="food.html">美食</a></li>
+                <li>|</li>
+                <li><a href="#travel">旅遊</a></li>
+                <li>|</li>
+                <li><a href="#attractions">景點</a></li>
+                <li>|</li>
+                <li><a href="#live">住宿</a></li>
+                <li>|</li>
+                <li><a href="#present">禮品</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="banner container">
+        <div class="left">
+            <h1><img src="1/left.png" alt=""></h1>
+        </div>
+
+        <div class="align">
+            <h2>人生最好的旅行，<br>就是在一個陌生的地方，<br>發現一種久違的感動。</h2>
+        </div>
+
+        <div class="main">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="1/p1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="1/p2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="1/p3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="1/p4.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="1/p5.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="menu-box">
+        <a href="#about"><span>關於玩旅</span></a><br>
+        <a href="food.html">美食</a><br>
+        <a href="#travel">旅遊</a><br>
+        <a href="#attractions">景點</a><br>
+        <a href="#live">住宿</a><br>
+        <a href="#present">禮品</a><br>
+
+    </div>
+
+    <div class="about container">
+
+        <div class="about-word">
+            <h1>
+                <img src="2/about.png" style="display:block; margin:auto;" alt="">
+            </h1>
+            <h2>關於「 <span>玩旅</span> 」的一切大小事！</h2>
+            <h3>台灣旅遊多元豐富，不管是熱門觀光景點、爆紅美食或是在地私房景點、巷弄美食，台灣景點通通有。發達的交通運輸系統，到哪個城市都方便。如果想要深度體驗各個美好的台灣景點，玩旅精選台灣住宿遍布全台，走到哪都有 玩旅品質把關的台灣住宿好選擇。以下將把台灣分為美食、旅遊、景點、住宿及相關禮品做介紹，點進該項目有更詳盡的推薦內容，不論你是台灣旅遊新手還是台灣美食達人，都能從中找到下一個目的地！</h3>
+        </div>
+    </div>
+
+    <div class="food container">
+        <div class="food-word">
+            <div class="food-first">
+                <h1><img src="3/word.png" style="display: block; margin: auto;" alt="">
+                </h1>
+                <h2>美食</h2>
+            </div>
+            <h3>台灣有”小吃王國”之稱<br>而小吃的定義，就是這些超級美味的食物非常容易買到，而且都很平價！<br>幾乎都花不到一張百元鈔票！！</h3>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="3/11.png" alt="" class="card__img" />
+                            <div class="card__body">
+                                <h3>TOP1</h3>
+                                <span>牛肉麵</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="3/22.png" alt="" class="card__img" />
+                            <div class="card__body">
+                                <h3>TOP2</h3>
+                                <span>蚵仔麵線</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="3/33.png" alt="" class="card__img" />
+                            <div class="card__body">
+                                <h3>TOP3</h3>
+                                <span>芒果冰</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="3/44.png" alt="" class="card__img" />
+                            <div class="card__body">
+                                <h3>TOP4</h3>
+                                <span>珍珠奶茶</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="3/55.png" alt="" class="card__img" />
+                            <div class="card__body">
+                                <h3>TOP5</h3>
+                                <span>滷肉飯</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="3/66.png" alt="" class="card__img" />
+                            <div class="card__body">
+                                <h3>TOP6</h3>
+                                <span>碗粿</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="3/77.png" alt="" class="card__img" />
+                            <div class="card__body">
+                                <h3>TOP7</h3>
+                                <span>小卷米粉</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="3/88.png" alt="" class="card__img" />
+                            <div class="card__body">
+                                <h3>TOP8</h3>
+                                <span>蚵仔煎</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="3/99.png" alt="" class="card__img" />
+                            <div class="card__body">
+                                <h3>TOP9</h3>
+                                <span>安平豆花</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="3/10.png" alt="" class="card__img" />
+                            <div class="card__body">
+                                <h3>TOP10</h3>
+                                <span>圓仔冰</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="food-second">
+                <button>View More</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="travel container">
+        <div class="travel-word">
+            <div class="travel-first">
+                <h1><img src="4/travel.png" style="display: block; margin: auto;" alt=""></h1>
+                <h2>旅遊</h2>
+            </div>
+
+            <div class="travel-second">
+                <div class="container2">
+                    <div class="card1">
+                        <img src="4/4.11.jpg" alt="">
+                        <div class="info">
+                            <h1>台東</h1>
+                            <h2>伯朗大道</h2>
+                            <button>View More</button>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <img src="4/4.22.jpg" alt="">
+                        <div class="info">
+                            <h1>花蓮</h1>
+                            <h2>石門麻糬洞</h2>
+                            <button>View More</button>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <img src="4/4.33.jpg" alt="">
+                        <div class="info">
+                            <h1>台南</h1>
+                            <h2>七股鹽山</h2>
+                            <button>View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--
+            <div class="container">
+                <div class="row">
+                    <div class="col"><img src="4/4.1.png" alt=""></div>
+                    <div class="col"><img src="4/4.2.png" alt=""></div>
+                    <div class="col"><img src="4/4.3.png" alt=""></div>
+                </div>
+                
+            </div>
+-->
+
+        </div>
+    </div>
+
+    <div class="live container">
+        <div class="live-first">
+            <div class="live-word">
+                <h1><img src="5/live.png" alt=""></h1>
+                <h2>住宿</h2>
+            </div>
+            <h3>還不知道今晚落腳何處嗎？<br>
+                其實台灣除了有名的美食及景點外，也有很多高品質的住宿喔~<br>
+                可以依價格、風格、距離遠近…，都可以任意挑選，<br>
+                趕快點進來摸索看看也沒有心動的吧！</h3>
+            <h4><button>CHECK OUT</button></h4>
+        </div>
+        <div class="live-second">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="5/5.3.png" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="5/5.4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="5/5.5.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="5/5.6.png" class="d-block w-100" alt="...">
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="present container">
+        <div class="present-first">
+            <h1><img src="6/present.png" alt=""></h1>
+            <h2>禮品</h2>
+        </div>
+
+        <div class="present-second">
+            <div class="present-word1">
+                <div class="inline1">
+                    <h1><img src="6/6.11.png" alt=""></h1>
+                </div>
+                <div class="inline11">
+                    <h1>芋頭留芯酥</h1>
+                    <h2>以港式點心流沙包的概念作融合，經過大甲師無數次的調配，滑順的流芯餡與鬆軟芋頭充分發揮甜鹹搭配的好滋味。</h2>
+                    <h3><button>MORE</button></h3>
+                </div>
+            </div>
+
+            <div class="present-word2">
+                <div class="inline2">
+                    <h1>財圓廣進牛軋糖禮盒</h1>
+                    <h2>製作成特殊的圓片造型，象徵了圓滿美好、歡喜團聚、財源廣進的意義，不只美味，更獨具意義。</h2>
+                    <h3><button>MORE</button></h3>
+                </div>
+                <div class="inline22">
+                    <h1><img src="6/6.2.png" alt=""></h1>
+                </div>
+            </div>
+
+            <div class="present-word3">
+                <div class="inline3">
+                    <h1><img src="6/6.3.png" alt=""></h1>
+                </div>
+                <div class="inline33">
+                    <h1>柳月三方六年輪蛋糕</h1>
+                    <h2>十勝地區的「柳月 三方六」年輪蛋糕，使用兩種巧克力調和出猶如白樺木外皮的擬真模樣，再裁切成三方六吋大小，因此有了「三方六」的特殊稱號。</h2>
+                    <h3><button>MORE</button></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="last container">
+     
+     <h1>Welcome to Taiwan!</h1>
+      
+
+    </div>
+    
+    <div class="footer container">
+        <div class="footer-first">
+            <img src="7/7%20logo.png" alt="">
+        </div>
+        <div class="footer-second">
+            <h1>聯絡方式<span>CONTACT METHOD</span></h1>
+            <ul class="method">
+                <li>地址：台北市萬華區艋舺大道303號</li>
+                <li>TEL：02-23628232 | FAX：02-23635154 聯絡我們</li>
+                <li>客服電子郵件:redcross@redcross.org.tw</li>
+                <li>Designed by Systex. | COPYRIGHTc 2012. <br>All Rights Reserved.</li>
+            </ul>
+        </div>
+        <div class="footer-third">
+            <img src="7/7%20qrcode.png" alt="">
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(".menu-btn").click(function() {
+            $(".menu-box").toggleClass("active");
+            $(this).toggleClass("active");
+        });
+
+
+        const mySwiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            coverflowEffect: {
+                slideShadows: true,
+                rotate: 20,
+                stretch: 0,
+                depth: 350,
+                modifier: 1,
+            },
+        });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

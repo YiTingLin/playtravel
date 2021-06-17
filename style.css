@@ -1,0 +1,1900 @@
+body {
+    margin: 0;
+    /*去網頁白邊*/
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-right: 160px;
+    padding-left: 40px;
+}
+
+.header h1 {
+    padding-left: 40px;
+}
+
+.header h2 {
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+
+.navigation {
+    display: flex;
+}
+
+
+.navigation ul {
+    text-align: center;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    display: inline;
+    position: relative;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 0 5px;
+}
+
+.navigation ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 4px 10px;
+}
+
+.navigation ul li a:hover {
+    background-color: rgba(34, 166, 186);
+    color: white;
+    border-radius: 8px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.left h1 {
+    width: 100px;
+    padding-left: 50px;
+    padding-top: 220px;
+}
+
+.left h1 img {
+    width: 40%;
+}
+
+.align h2 {
+    width: 200px;
+    margin: 0 auto;
+    padding-right: 70px;
+    writing-mode: vertical-rl;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: inherit;
+
+    animation: fadein 8s infinite;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.main {
+    width: 1200px;
+}
+
+.menu-btn {
+    width: 64px;
+    height: 64px;
+    background: rgba(34, 166, 186);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 7px;
+    padding-left: 3px;
+    box-sizing: border-box;
+    z-index: 99999;
+    cursor: pointer;
+    margin-top: 45px;
+    margin-right: 50px;
+
+}
+
+.menu-btn span {
+    width: 60%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    margin: 10px auto;
+    transition: all .3s;
+}
+
+.menu-box {
+    width: 30%;
+    height: 100vh;
+    background: rgba(34, 166, 186, 0.9);
+    position: fixed;
+    top: 0;
+    right: -40%;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.menu-box a {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    line-height: 2.2;
+    text-decoration: none;
+}
+
+.menu-box a:hover {
+    box-shadow: 0 2px;
+    padding-bottom: 5px;
+}
+
+
+.menu-box.active {
+    right: 0 !important;
+}
+
+.menu-btn.active span:first-child {
+    transform: rotate(45deg) translate(8px, 15px);
+}
+
+.menu-btn.active span:last-child {
+    transform: rotate(-45deg) translate(3px, -10px);
+}
+
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+
+.about {
+    background-image: url(2/bottom.png);
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+
+.about-word h1 img {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.about-word h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.about-word h2 span {
+    color: #FFD700;
+    text-shadow: 0.06em 0.08em 0.02em gray;
+}
+
+.about-word h3 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 4px;
+    line-height: 36px;
+    padding-top: 40px;
+}
+
+.food {
+    background-color: white;
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    padding-top: 6%;
+    padding-bottom: 7%;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.food-first {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 20%;
+}
+
+.food-first h1 img {
+    width: 30%;
+}
+
+.food-first h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+    right: 23%;
+    white-space: nowrap;
+}
+
+.food-word h3 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: inherit;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+.swiper-wrapper {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.swiper-slide {
+    width: auto !important;
+}
+
+.card {
+    width: 280px;
+    border-radius: 8px;
+    background: white;
+    overflow: hidden;
+}
+
+.card__img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.card__body {
+    padding: 0 20px 15px 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card__body > h3 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: center
+}
+
+.card__body > span {
+    display: block;
+    font-size: 2rem;
+    color: rgba(34, 166, 186);
+    text-align: center
+}
+
+.food-second {
+    padding-top: 8%;
+    padding-left: 45%;
+}
+
+.food-second button {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.5px;
+    background-color: #FFD306;
+    border: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.food-second button:hover {
+    border-radius: 10px;
+}
+
+.travel {
+    background-color: #F5F5F5;
+    display: flex;
+    /*    justify-content: space-between;*/
+    max-width: 100%;
+    background-size: cover;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+
+.travel-first {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 20%;
+}
+
+.travel-first h1 img {
+    width: 30%;
+}
+
+.travel-first h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+    right: 25%;
+    white-space: nowrap;
+}
+
+
+.container2 {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-top: 50px;
+    vertical-align: middle;
+}
+
+.card1 {
+    position: relative;
+    width: 480px;
+    float: left;
+    margin: 0;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.card1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    /*   display: none; */
+    opacity: 0;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 18%;
+    -webkit-transition: .5s ease-out;
+
+}
+
+.info h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #fff;
+
+}
+
+.info h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.info button {
+    margin-top: 15px;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    background-color: #FFD306;
+    border: none;
+    text-decoration: none;
+}
+
+.info:hover {
+    -webkit-transition: 700ms;
+    margin-top: 0;
+    opacity: 1;
+}
+
+.info button:hover {
+    border-radius: 8px;
+}
+
+
+.live {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.live-first {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.live-word {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+    padding-top: 9%;
+}
+
+.live-word h1 img {
+    width: 50%;
+}
+
+.live-word h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 55px;
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+    right: 30%;
+    white-space: nowrap;
+}
+
+.live-first h3 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    padding-top: 8%;
+}
+
+.live-first h4 {
+    padding-top: 5%;
+}
+
+.live-first h4 button {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.5px;
+    background-color: #00A3A3;
+    border: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.live-first h4 :hover {
+    border-radius: 10px;
+}
+
+.live-second {
+    padding-top: 1%;
+    padding-left: 60px;
+    width: 65%;
+}
+
+.present {
+    background-color: #F5F5F5;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    padding-right: 25%;
+    padding-left: 22%;
+}
+
+.present-first {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+    padding-top: 9%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.present-first h1 img {
+    width: 90%;
+}
+
+.present-first h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+    font-size: 65px;
+    letter-spacing: 4px;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+}
+
+.present-first {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+    padding-top: 9%;
+}
+
+.present-second {
+    width: 100%;
+    display: block;
+    padding-left: 10%;
+}
+
+.present-word1 {
+    display: flex;
+    padding-top: 6%;
+}
+
+
+.inline1 {
+    padding-bottom: 5%;
+    padding-left: 5%;
+    width: 40%;
+}
+
+.inline1 h1 {
+    padding-top: 10%;
+}
+
+.inline1 h1 img {
+    width: 80%;
+}
+
+.inline11 {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 3%;
+    width: 60%;
+}
+
+.inline11 h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.inline11 h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 4px;
+    line-height: 24px;
+    padding-top: 3%;
+}
+
+
+.inline11 h3 {
+    padding-top: 1%;
+}
+
+.inline11 h3 button {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.5px;
+    background-color: #FFD306;
+    border: none;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.inline11 h3 button:hover {
+    border-radius: 10px;
+}
+
+.present-word2 {
+    display: flex;
+}
+
+.inline2 {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-right: 6%;
+    width: 60%;
+}
+
+.inline22 {
+    padding-bottom: 5%;
+    width: 40%;
+}
+
+
+.inline2 h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+.inline2 h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 4px;
+    line-height: 24px;
+    padding-top: 3%;
+    text-align: right;
+}
+
+
+.inline2 h3 {
+    padding-top: 1%;
+    text-align: right;
+}
+
+.inline2 h3 button {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.5px;
+    background-color: #FFD306;
+    border: none;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.inline2 h3 button:hover {
+    border-radius: 10px;
+}
+
+.inline22 h1 {
+    padding-top: 10%;
+}
+
+.inline22 h1 img {
+    width: 70%;
+}
+
+.present-word3 {
+    display: flex;
+}
+
+
+.inline3 {
+    padding-bottom: 5%;
+    width: 40%;
+}
+
+.inline3 h1 {
+    padding-top: 15%;
+}
+
+.inline3 h1 img {
+    width: 90%;
+}
+
+.inline33 {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-right: 0px;
+    padding-left: 3%;
+    width: 60%;
+}
+
+.inline33 h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.inline33 h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 4px;
+    line-height: 24px;
+    padding-top: 3%;
+}
+
+
+.inline33 h3 {
+    padding-top: 1%;
+}
+
+.inline33 h3 button {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.5px;
+    background-color: #FFD306;
+    border: none;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.inline33 h3 button:hover {
+    border-radius: 10px;
+}
+
+
+.last {
+    max-width: 100%;
+    height: 75vh;
+    background-image: url(7/7.11.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.last h1 {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: 1px;
+    color: white;
+    padding-top: 16%;
+    text-shadow: 0.1em 0.1em 0.05em #454545;
+}
+
+.footer {
+    background-color: rgba(34, 166, 186);
+    max-width: 100%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    display: flex;
+}
+
+.footer-first {
+    width: 15%;
+    padding-right: 30px;
+}
+
+.footer-first img {
+    width: 80%;
+}
+
+.footer-second {
+    width: 64%;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.footer-second h1 {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: left;
+}
+
+.footer-second h1 span {
+    font-weight: 400;
+    font-size: 24px;
+    padding-left: 24px;
+}
+
+
+.method {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 6px;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 10px;
+    word-break: break-all;
+}
+
+.footer-third {
+    width: 10%;
+    padding-top: 10px;
+    left: 10%;
+}
+
+.footer-third img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1400px) {
+    .banner container {
+        height: auto;
+    }
+
+    .header h2 {
+        display: none;
+    }
+
+    .menu-box {
+        width: 30%;
+        height: 100vh;
+        padding: 40px 60px;
+    }
+
+    .menu-box a {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 2.8;
+        text-decoration: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1025px) {
+    .header h1 {
+        padding-left: 10px;
+        ;
+    }
+
+    .left h1 {
+        display: none;
+        margin: 0;
+    }
+
+    .align h2 {
+        padding-left: 80px;
+        font-size: 16px;
+    }
+
+    .menu-box {
+        width: 100%;
+        height: 90%;
+        padding: 40px 110px;
+        right: -100%;
+    }
+
+    .menu-box a {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 3.2;
+        text-decoration: none;
+    }
+
+    .about {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .about-word h1 img {
+        width: 50%;
+        padding-right: 20px;
+    }
+
+    .food-first h1 img {
+        width: 35%;
+    }
+
+    .food-first h2 {
+        font-size: 50px;
+        padding-left: 5%;
+    }
+
+    .food-second {
+        padding-left: 43%;
+    }
+
+
+    .travel {
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+    .travel-first h1 img {
+        width: 50%;
+    }
+
+    .travel-first h2 {
+        font-size: 50px;
+        right: 16%;
+    }
+
+    .card1 {
+        width: 320px;
+    }
+
+    .info {
+        padding-top: 16%;
+    }
+
+    .info h1 {
+        font-size: 30px;
+    }
+
+    .info h2 {
+        font-size: 26px;
+    }
+
+    .info button {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .live-first {
+        width: 50%;
+    }
+
+
+    .live-word h1 img {
+        width: 50%;
+    }
+
+    .live-word h2 {
+        font-size: 45px;
+        right: 30%;
+    }
+
+    .live-first h3 {
+        font-size: 13px;
+        line-height: 20px;
+        padding-top: 6%;
+    }
+
+    .live-first h4 {
+        padding-top: 3%;
+    }
+
+    .live-first h4 button {
+        font-size: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .live-second {
+        padding-top: 3%;
+        padding-left: 5px;
+        width: 65%;
+    }
+
+    .present {
+        padding-right: 15%;
+        padding-left: 10%;
+    }
+
+    .inline3 h1 img {
+        width: 90%;
+    }
+
+    .inline33 {
+        padding-top: 5%;
+        padding-bottom: 10%;
+        padding-left: 3%;
+        width: 60%;
+    }
+
+    .last h1 {
+        font-size: 60px;
+        padding-top: 22%;
+    }
+
+    .footer-first {
+        width: 15%;
+        padding-right: 0;
+    }
+
+    .footer-first img {
+        width: 80%;
+    }
+
+    .footer-second h1 {
+        font-size: 24px;
+        letter-spacing: 4px;
+    }
+
+    .footer-second h1 span {
+        font-size: 18px;
+        padding-left: 24px;
+    }
+
+
+    .method {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:920px) {
+    .align h2 {
+        padding-left: 100px;
+        font-size: 12px;
+    }
+
+    .navigation ul li {
+        list-style-type: none;
+        display: inline;
+        position: relative;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        margin: 0 12px;
+    }
+
+    .menu-box {
+        padding: 50px 90px;
+        height: 80%;
+    }
+
+    .menu-box a {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 2.8;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+
+    .about-word h2 {
+        padding-top: 50px;
+        font-weight: 600;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .food-first h1 img {
+        width: 35%;
+    }
+
+    .food-first h2 {
+        font-size: 45px;
+        right: 20%;
+    }
+
+    .food-second {
+        padding-left: 40%;
+    }
+
+    .travel {
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+    .card1 {
+        width: 280px;
+    }
+
+    .info {
+        padding-top: 10%;
+    }
+
+    .live {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+
+    .live-first {
+        width: 40%;
+    }
+
+
+    .live-word h1 img {
+        width: 70%;
+    }
+
+    .live-word h2 {
+        font-size: 40px;
+        right: 14%;
+    }
+
+    .last h1 {
+        padding-top: 25%;
+    }
+
+    .footer {
+        padding-top: 5%;
+    }
+
+    .footer-first {
+        width: 15%;
+        padding-right: 10px;
+        padding-top: 2%;
+    }
+
+    .footer-first img {
+        width: 80%;
+    }
+
+    .footer-second {
+        width: 65%;
+    }
+
+    .footer-second h1 {
+        font-size: 24px;
+        letter-spacing: 4px;
+    }
+
+    .footer-second h1 span {
+        font-size: 18px;
+        padding-left: 24px;
+    }
+
+
+    .method {
+        font-size: 12px;
+        line-height: 20px;
+        padding-right: 0;
+    }
+
+    .footer-third {
+        width: 15%;
+        padding-top: 2%;
+        left: 10%;
+    }
+
+    .footer-third img {
+        width: 80%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:768px) {
+    .align {
+        display: none;
+    }
+
+    .main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .menu-box {
+        width: 100%;
+        height: 65%;
+        right: -100%;
+        padding: 40px 60px;
+    }
+
+    .menu-box a {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 3.6;
+        text-decoration: none;
+    }
+
+    .food-first h1 img {
+        width: 50%;
+    }
+
+    .food-first h2 {
+        font-size: 45px;
+        right: 12%;
+    }
+
+    .food-word h3 {
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding-top: 30px;
+    }
+
+    .food .card__body > h3 {
+        font-size: 1.25rem;
+    }
+
+    .food .card__body > span {
+        font-size: 2rem;
+    }
+
+    .travel {
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+    .card1 {
+        width: 230px;
+    }
+
+    .info {
+        padding-top: 10%;
+    }
+
+    .info h1 {
+        font-size: 26px;
+    }
+
+    .info h2 {
+        font-size: 22px;
+    }
+
+
+    .live {
+        background-color: #fff;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 15%;
+        margin: 0 auto;
+    }
+
+    .live-first {
+        width: 100%;
+    }
+
+    .live-word h1 img {
+        width: 75%;
+    }
+
+    .live-word h2 {
+        font-size: 40px;
+        right: 10%;
+    }
+
+    .live-first h3 {
+        display: none;
+    }
+
+    .live-first h4 {
+        padding-top: 8%;
+        padding-left: 25%;
+    }
+
+
+    .live-first h4 button {
+        font-size: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .live-second {
+        width: 100%;
+    }
+
+
+    .present {
+        padding-right: 10%;
+        padding-left: 5%;
+    }
+
+    .last {
+        height: 55vh;
+    }
+
+    .last h1 {
+        font-size: 55px;
+        padding-top: 22%;
+    }
+
+    .footer {
+        padding-top: 5%;
+        padding-left: 7%;
+    }
+
+    .footer-first {
+        display: none;
+    }
+
+    .footer-second {
+        width: 100%;
+    }
+
+    .footer-second h1 {
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+
+    .footer-second h1 span {
+        font-size: 16px;
+        padding-left: 24px;
+    }
+
+
+    .method {
+        font-size: 10px;
+        line-height: 20px;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .footer-third {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px) {
+    .menu-box {
+        width: 100%;
+        height: 50%;
+        right: -100%;
+        padding: 40px 50px;
+    }
+
+    .menu-box a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2.8;
+        text-decoration: none;
+    }
+
+    .navigation ul li {
+        display: none;
+    }
+
+    .about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .about-word h1 img {
+        width: 60%;
+        padding-top: 30px;
+        padding-right: 20px;
+    }
+
+    .about-word h2 {
+        padding-top: 50px;
+        font-weight: 600;
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .about-word h3 {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 3.5px;
+        line-height: 20px;
+    }
+
+    .food {
+        padding-top: 10%;
+        padding-bottom: 20%;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    .food-first h1 img {
+        width: 60%;
+    }
+
+    .food-first h2 {
+        font-size: 40px;
+        right: 8%;
+    }
+
+    .food-word h3 {
+        font-size: 15px;
+        letter-spacing: 2px;
+        padding-top: 30px;
+    }
+
+    .food .card {
+        width: 280px;
+        height: 380px;
+        border-radius: 8px;
+    }
+
+    .food .card__body {
+        padding: 0 20px 15px 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .food .card__body > h3 {
+        font-size: 1.25rem;
+    }
+
+    .food .card__body > span {
+        font-size: 2.25rem;
+    }
+
+    .food-second {
+        padding-left: 36%;
+    }
+
+    .travel {
+        padding-top: 8%;
+    }
+
+
+    .travel-first h1 img {
+        width: 60%;
+    }
+
+    .travel-first h2 {
+        font-size: 40px;
+        right: 10%;
+    }
+
+    .container2 {
+        padding-left: 15px;
+        padding-top: 5%;
+    }
+
+    .card1 {
+        width: 100%;
+    }
+
+    .info {
+        padding-top: 15%;
+    }
+
+    .info h1 {
+        font-size: 50px;
+    }
+
+    .info h2 {
+        font-size: 40px;
+    }
+
+    .info button {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+
+    .live-first {
+        padding-left: 5%;
+    }
+
+
+    .present {
+        padding-right: 10%;
+        padding-left: 2%;
+    }
+
+    .present-first h1 img {
+        width: 100%;
+    }
+
+    .present-first h2 {
+        font-size: 45px;
+        left: 5%;
+    }
+
+    .inline1 h1 {
+        padding-top: 15%;
+    }
+
+    .inline1 h1 img {
+        width: 90%;
+    }
+
+    .inline11 h1 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .inline11 h2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .inline11 h3 button {
+        font-size: 14px;
+    }
+
+    .inline2 h1 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .inline2 h2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .inline2 h3 {
+        font-size: 14px;
+    }
+
+    .inline2 h3 button {
+        font-size: 14px;
+    }
+
+    .inline22 h1 {
+        padding-top: 8%;
+    }
+
+    .inline22 h1 img {
+        width: 90%;
+    }
+
+    .inline3 h1 {
+        padding-top: 30%;
+    }
+
+    .inline3 h1 img {
+        width: 90%;
+    }
+
+    .inline33 h1 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .inline33 h2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .inline33 h3 button {
+        font-size: 14px;
+    }
+
+    .last {
+        height: 45vh;
+    }
+
+    .last h1 {
+        font-size: 45px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:415px) {
+
+
+    .about {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about-word h1 img {
+        width: 80%;
+        padding-top: 30px;
+        padding-right: 20px;
+    }
+
+    .about-word h2 {
+        padding-top: 50px;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .about-word h3 {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+    .food {
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+
+    .food-first h1 img {
+        width: 95%;
+    }
+
+    .food-first h2 {
+        font-size: 40px;
+        left: 8%;
+    }
+
+    .food-second {
+        padding-left: 30%;
+    }
+
+    .travel-first h1 img {
+        width: 70%;
+    }
+
+    .travel-first h2 {
+        font-size: 30px;
+        right: 7%;
+    }
+
+    .container2 {
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 5%;
+    }
+
+    .card1 {
+        width: 100%;
+    }
+
+    .info {
+        padding-top: 15%;
+    }
+
+    .info h1 {
+        font-size: 36px;
+    }
+
+    .info h2 {
+        font-size: 28px;
+    }
+
+    .info button {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .live-first {
+        width: 100%;
+        margin-left: 10%;
+        padding-left: 0;
+    }
+
+    .live-word h1 img {
+        width: 100%;
+    }
+
+    .live-word h2 {
+        font-size: 32px;
+        left: 6%;
+    }
+
+    .live-second {
+        padding-top: 5%;
+        padding-left: 10px;
+        padding-right: 30px;
+        width: 100%;
+    }
+
+    .present {
+        padding-right: 5%;
+    }
+
+    .present-first h1 img {
+        width: 100%;
+    }
+
+    .present-first h2 {
+        font-size: 32px;
+        left: 5%;
+    }
+
+    .inline1 h1 {
+        padding-top: 30%;
+    }
+
+    .inline1 h1 img {
+        width: 90%;
+    }
+
+    .inline11 h1 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .inline11 h2 {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .inline11 h3 button {
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .inline2 h1 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .inline2 h2 {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+
+    .inline2 h3 button {
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .inline22 h1 {
+        padding-top: 15%;
+    }
+
+    .inline22 h1 img {
+        width: 80%;
+    }
+
+    .inline3 h1 {
+        padding-top: 50%;
+    }
+
+    .inline3 h1 img {
+        width: 90%;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .inline33 h1 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .inline33 h2 {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+
+    .inline33 h3 button {
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .last {
+        height: 35vh;
+    }
+
+    .last h1 {
+        font-size: 45px;
+    }
+
+    .footer {
+        padding-top: 5%;
+        padding-left: 7%;
+    }
+
+    .footer-first {
+        display: none;
+    }
+
+    .footer-second {
+        width: 100%;
+    }
+
+    .footer-second h1 {
+        font-size: 20px;
+        letter-spacing: 4px;
+        padding-left: 12px;
+    }
+
+    .footer-second h1 span {
+        font-size: 16px;
+        padding-left: 24px;
+    }
+
+    .method {
+        font-size: 8px;
+        line-height: 17px;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .footer-third {
+        display: none;
+    }
+}
